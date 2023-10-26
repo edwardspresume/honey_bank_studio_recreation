@@ -1,6 +1,11 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 
+	import { Toaster, toast } from 'svelte-sonner';
+	import { superForm } from 'sveltekit-superforms/client';
+
+	import { ContactValidationSchema } from '$lib/validations/contactValidationSchema';
+
 	import H1 from '$components/H1.svelte';
 	import H2 from '$components/H2.svelte';
 	import PageHeader from '$components/PageHeader.svelte';
@@ -9,7 +14,28 @@
 	import TextArea from '$components/form/TextArea.svelte';
 
 	export let data: PageData;
+
+	const { enhance, form, errors, delayed, message } = superForm(data.contactForm, {
+		resetForm: true,
+		validators: ContactValidationSchema,
+
+		onUpdated: () => {
+			if (!$message) return;
+
+			const { alertType, alertText } = $message;
+
+			if (alertType === 'success') {
+				toast.success(alertText);
+			}
+
+			if (alertType === 'error') {
+				toast.error(alertText);
+			}
+		}
+	});
 </script>
+
+<Toaster richColors />
 
 <PageHeader viewPortHeight={50}>
 	<H1>Contact Us</H1>
@@ -34,8 +60,16 @@
 
 <section>
 	<div class="container grid gap-3 py-8">
-		<form method="post" class="grid w-full max-w-md gap-5 mx-auto">
-			<InputField type="text" label="Name" name="name" placeholder="Name" autocomplete="name" />
+		<form method="post" use:enhance class="grid w-full max-w-md gap-5 mx-auto">
+			<InputField
+				type="text"
+				label="Name"
+				name="name"
+				placeholder="Name"
+				autocomplete="name"
+				bind:value={$form.name}
+				errorMessage={$errors.name}
+			/>
 
 			<InputField
 				type="email"
@@ -43,11 +77,19 @@
 				name="email"
 				placeholder="Email"
 				autocomplete="email"
+				bind:value={$form.email}
+				errorMessage={$errors.email}
 			/>
 
-			<TextArea label="Message" name="message" placeholder="Message" />
+			<TextArea
+				label="Message"
+				name="message"
+				placeholder="Message"
+				bind:value={$form.message}
+				errorMessage={$errors.message}
+			/>
 
-			<SubmitButton />
+			<SubmitButton disabled={$delayed} />
 		</form>
 	</div>
 </section>
