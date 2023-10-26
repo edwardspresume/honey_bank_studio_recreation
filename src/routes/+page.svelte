@@ -19,7 +19,7 @@
 
 
 
-<section class="mt-[100vh] flex">
+<!-- <section class="mt-[100vh] flex">
 	<div class="max-w-[50%] grid justify-items-end">
 		<h2 class="text-xl font-medium">
 			Small town, <span>big ideas</span>
@@ -123,4 +123,4 @@
 		top: 0;
 	}
 
-    </style>
+    </style> -->
