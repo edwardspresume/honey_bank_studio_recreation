@@ -10,7 +10,7 @@
 	<slot />
 </main>
 
-<footer class="relative p-2 text-center bg-secondary sm:p-4">
+<footer class="relative p-2 text-center border-t-2 border-background bg-secondary sm:p-4">
 	<p class="text-sm sm:text-base">Copyright © 2023 Honeybank Studios LTD</p>
 
 	<img
