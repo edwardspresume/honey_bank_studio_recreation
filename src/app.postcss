@@ -2,3 +2,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--background: #120816;
+		--foreground: #fff;
+
+		--primary-color: #421e56;
+		--secondary-color: #211129;
+		--tertiary-color: #bc6083;
+	}
+
+	body {
+		color: var(--foreground);
+		background: var(--background);
+	}
+}
