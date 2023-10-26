@@ -14,7 +14,7 @@
 
 <svelte:window bind:scrollY />
 
-<header class="sticky top-0 z-50 duration-300 transition-colors {bgPrimary ? 'bg-primary' : ''}">
+<header class="fixed w-full top-0 z-50 duration-300 transition-colors {bgPrimary ? 'bg-primary' : ''}">
 	<div class="container flex justify-between p-4">
 		<a href={RoutePaths.HOMEPAGE} class="b">
 			<img src={logoSRC} alt="Honeybank Studios" class="w-56 sm:w-80" />
