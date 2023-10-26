@@ -32,7 +32,7 @@
 		{spellcheck}
 		{placeholder}
 		{enterkeyhint}
-		class={cn('bg-transparent border rounded-2xl py-2 px-3 sm:py-4', className)}
+		class={cn('bg-transparent border rounded-lg py-2 px-3 sm:py-4', className)}
 		aria-invalid={errorMessage ? 'true' : undefined}
 		{...$$restProps}
 	/>

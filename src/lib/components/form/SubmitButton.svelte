@@ -17,7 +17,7 @@
 	type="submit"
 	aria-disabled={disabled}
 	class={cn(
-		'font-bold flex gap-2 items-center w-full border px-2 py-3 rounded-full justify-center duration-300 transition-colors hover:bg-primary',
+		'font-bold flex gap-2 items-center w-full border px-2 py-3 rounded-lg justify-center duration-300 transition-colors hover:bg-primary',
 		className
 	)}
 >
