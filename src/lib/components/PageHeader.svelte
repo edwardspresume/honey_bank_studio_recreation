@@ -1,12 +1,18 @@
-<header class="clip-header top-0 left-0 grid h-[100dvh] content-center absolute bg-primary w-full">
+<script>
+	export let viewPortHeight = 100;
+</script>
+
+<header
+	style="height:{viewPortHeight}dvh;"
+	class="relative grid content-center w-full clip-header bg-primary"
+>
 	<div class="container mt-20 text-tertiary mix-blend-color-dodge">
-	<slot></slot>
+		<slot />
 	</div>
 </header>
 
-
 <style>
-    	.clip-header::before {
+	.clip-header::before {
 		content: '';
 		position: absolute;
 		inset-block-start: 0;

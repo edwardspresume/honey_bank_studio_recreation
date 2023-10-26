@@ -1,23 +1,16 @@
 <script>
-	import H1 from "$components/H1.svelte";
-	import PageHeader from "$components/PageHeader.svelte";
-
+	import H1 from '$components/H1.svelte';
+	import PageHeader from '$components/PageHeader.svelte';
 </script>
 
 <PageHeader>
+	<H1>Turning ideas into experiences with tech.</H1>
 
-        <H1>
-            Turning ideas into experiences with tech.
-        </H1>
-
-
-		<button class="px-5 py-2 mt-5 transition-colors duration-300 border rounded-full sm:py-4 sm:text-xl hover:bg-gray-600 hover:text-foreground"
-			>More about us</button
-		>
+	<button
+		class="px-5 py-2 mt-5 transition-colors duration-300 border rounded-full sm:py-4 sm:text-xl hover:bg-gray-600 hover:text-foreground"
+		>More about us</button
+	>
 </PageHeader>
-
-
-
 
 <!-- <section class="mt-[100vh] flex">
 	<div class="max-w-[50%] grid justify-items-end">
