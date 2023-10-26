@@ -1,3 +1,15 @@
-<h1 class="max-w-[46rem] text-[2.625rem] font-bold leading-tight sm:text-[5.375rem]">
+<script lang="ts">
+	import type { HTMLAttributes } from 'svelte/elements';
+
+	import { cn } from '$lib';
+
+	let className: HTMLAttributes<HTMLElement>['class'] = undefined;
+
+	export { className as class };
+</script>
+
+<h1
+	class={cn('font-bold leading-tight max-w-[46rem] text-[2.625rem] sm:text-[5.375rem]', className)}
+>
 	<slot />
 </h1>
