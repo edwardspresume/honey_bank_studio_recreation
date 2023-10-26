@@ -7,7 +7,7 @@
 	<H1>Turning ideas into experiences with tech.</H1>
 
 	<button
-		class="px-5 py-2 mt-5 transition-colors duration-300 border rounded-full sm:py-4 sm:text-xl hover:bg-gray-600 hover:text-foreground"
+		class="px-5 py-2 mt-5 transition-colors duration-300 border rounded-full sm:py-4 sm:text-xl hover:bg-gray-600 hover:text-foreground border-tertiary"
 		>More about us</button
 	>
 </PageHeader>
