@@ -25,3 +25,10 @@ export type EnterKeyHint =
 	| 'send'
 	| null
 	| undefined;
+
+export type AlertType = 'success' | 'error' | 'warning' | 'info';
+
+export type AlertMessage = {
+	alertType: AlertType;
+	alertText: string;
+};
