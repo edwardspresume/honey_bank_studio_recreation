@@ -60,7 +60,7 @@
 
 <section>
 	<div class="container grid gap-3 py-8">
-		<form method="post" use:enhance class="grid w-full max-w-md gap-5 mx-auto">
+		<form method="post" use:enhance class="grid w-full max-w-lg gap-5 mx-auto">
 			<InputField
 				type="text"
 				label="Name"
