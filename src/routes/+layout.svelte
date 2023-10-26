@@ -1,6 +1,12 @@
 <script>
+	import SiteHeader from '$components/siteHeader/SiteHeader.svelte';
+
 	import '../app.postcss';
 
 </script>
 
-<slot />
+<SiteHeader />
+
+<main>
+	<slot />
+</main>
