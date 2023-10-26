@@ -6,6 +6,7 @@
 
 	import { ContactValidationSchema } from '$lib/validations/contactValidationSchema';
 
+	import Container from '$components/Container.svelte';
 	import H1 from '$components/H1.svelte';
 	import H2 from '$components/H2.svelte';
 	import PageHeader from '$components/PageHeader.svelte';
@@ -42,7 +43,7 @@
 </PageHeader>
 
 <section class="bg-secondary">
-	<div class="container grid gap-3 py-8">
+	<Container class="grid gap-3">
 		<H2>Do not use this form for support requests relating to our products and services.</H2>
 
 		<p>Please visit the corresponding support channel:</p>
@@ -55,11 +56,11 @@
 				<a href="https://help.assistcord.com/"> Assistcord Help Center</a>
 			</li>
 		</ul>
-	</div>
+	</Container>
 </section>
 
 <section>
-	<div class="container grid gap-3 py-8">
+	<Container class="grid gap-3">
 		<form method="post" use:enhance class="grid w-full max-w-lg gap-5 mx-auto">
 			<InputField
 				type="text"
@@ -91,5 +92,5 @@
 
 			<SubmitButton disabled={$delayed} />
 		</form>
-	</div>
+	</Container>
 </section>
