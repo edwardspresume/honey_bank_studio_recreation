@@ -3,7 +3,7 @@
 </script>
 
 <header
-	style="height:{viewPortHeight}dvh;"
+	style="height:{viewPortHeight}vh;"
 	class="relative grid content-center w-full clip-header bg-primary"
 >
 	<div class="container mt-20 text-tertiary mix-blend-color-dodge">
