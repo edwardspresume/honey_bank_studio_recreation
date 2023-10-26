@@ -1,4 +1,6 @@
 <script>
+	import { page } from '$app/stores';
+
 	import { RoutePaths } from '$lib/types';
 
 	import { isSiteNavMenuOpen } from './SiteNavMenuToggleBtn.svelte';
@@ -20,6 +22,8 @@
 			<img src={logoSRC} alt="Honeybank Studios" class="w-56 sm:w-80" />
 		</a>
 
-		<SiteNav />
+		{#if $page.url.pathname !== RoutePaths.CONTACT}
+            <SiteNav />
+        {/if}
 	</div>
 </header>
