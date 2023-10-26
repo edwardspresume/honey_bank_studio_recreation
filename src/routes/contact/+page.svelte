@@ -1,10 +1,14 @@
 <script lang="ts">
-    import PageHeader from '$components/PageHeader.svelte';
     import type { PageData } from './$types';
+
+	import H1 from '$components/H1.svelte';
+	import PageHeader from '$components/PageHeader.svelte';
 
     export let data: PageData;
 </script>
 
 <PageHeader>
-    <h1>Contact</h1>
+    <H1>
+        Contact
+    </H1>
 </PageHeader>
