@@ -27,7 +27,7 @@
 	<a
 		href={RoutePaths.CONTACT}
 		tabindex={$isSiteNavMenuOpen ? 0 : -1}
-		class="flex items-center justify-center w-full gap-2 p-2 border rounded-full sm:p-4 sm:text-xl whitespace-nowrap"
+		class="flex items-center justify-center w-full gap-2 px-5 py-2 transition-colors duration-300 border rounded-full hover:bg-gray-600 hover:text-foreground sm:py-4 sm:text-xl whitespace-nowrap"
 	>
 		<IconMailFilled size={20} class="w-4 sm:w-full" />
 
