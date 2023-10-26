@@ -14,6 +14,9 @@ dependencies:
   postcss-preset-env:
     specifier: ^9.2.0
     version: 9.2.0(postcss@8.4.31)
+  svelte-sonner:
+    specifier: ^0.3.0
+    version: 0.3.0(svelte@4.2.2)
   tailwind-merge:
     specifier: ^1.14.0
     version: 1.14.0
@@ -61,6 +64,9 @@ devDependencies:
   svelte-check:
     specifier: ^3.4.3
     version: 3.5.2(postcss-load-config@4.0.1)(postcss@8.4.31)(svelte@4.2.2)
+  sveltekit-superforms:
+    specifier: ^1.8.0
+    version: 1.8.0(@sveltejs/kit@1.27.1)(svelte@4.2.2)(zod@3.22.4)
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.5
@@ -73,6 +79,9 @@ devDependencies:
   vite:
     specifier: ^4.4.2
     version: 4.5.0
+  zod:
+    specifier: ^3.22.4
+    version: 3.22.4
 
 packages:
 
@@ -2744,6 +2753,14 @@ packages:
       typescript: 5.2.2
     dev: true
 
+  /svelte-sonner@0.3.0(svelte@4.2.2):
+    resolution: {integrity: sha512-AbRxxqQJb0cc2wEbluc+HVbHukYcnXUZtfSCAcxCHjV3JxB7qrBK4s4XUDSBsVT4Lboqk/0Qv7THIghkEl665A==}
+    peerDependencies:
+      svelte: '>=3 <5'
+    dependencies:
+      svelte: 4.2.2
+    dev: false
+
   /svelte@4.2.2:
     resolution: {integrity: sha512-My2tytF2e2NnHSpn2M7/3VdXT4JdTglYVUuSuK/mXL2XtulPYbeBfl8Dm1QiaKRn0zoULRnL+EtfZHHP0k4H3A==}
     engines: {node: '>=16'}
@@ -2761,6 +2778,18 @@ packages:
       locate-character: 3.0.0
       magic-string: 0.30.5
       periscopic: 3.1.0
+
+  /sveltekit-superforms@1.8.0(@sveltejs/kit@1.27.1)(svelte@4.2.2)(zod@3.22.4):
+    resolution: {integrity: sha512-ig4SJNe72UNlmL2FjXk6Z3I7WYEm+qerA8PB4WOjQkOirztiDNJrY/bs1lF8VLxc56TSG9JQkCtZkgUdlH3yYA==}
+    peerDependencies:
+      '@sveltejs/kit': 1.x
+      svelte: 3.x || 4.x
+      zod: 3.x
+    dependencies:
+      '@sveltejs/kit': 1.27.1(svelte@4.2.2)(vite@4.5.0)
+      svelte: 4.2.2
+      zod: 3.22.4
+    dev: true
 
   /tailwind-merge@1.14.0:
     resolution: {integrity: sha512-3mFKyCo/MBcgyOTlrY8T7odzZFx+w+qKSMAmdFzRvqBfLlSigU6TZnlFHK0lkMwj9Bj8OYU+9yW9lmGuS0QEnQ==}
@@ -2969,4 +2998,8 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
     dev: true
