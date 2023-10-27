@@ -1,5 +1,5 @@
 <span
-	class="relative inline-block before:absolute before:left-[-0.125rem] before:right-[-0.125rem] before:bottom-0 before:top-0 before:mix-blend-screen before:bg-tertiary before:skew-x-12 before:opacity-80 filter- before:[filter:url(#refract_32628-336)]"
+	class="relative before:absolute whitespace-nowrap before:left-[-0.125rem] before:right-[-0.125rem] before:bottom-0 before:top-0 before:mix-blend-screen before:bg-tertiary before:skew-x-12 before:opacity-80 filter- before:[filter:url(#refract_32628-336)]"
 >
 	<slot />
 </span>
