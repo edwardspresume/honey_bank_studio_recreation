@@ -1,38 +1,32 @@
-# create-svelte
+# Recreation of Honeybank Studios Site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Please note that this was not intended to be a complete 1:1 recreation of the site. This demo site was created to demonstrate my skills as a developer to complement the job application I sent to Honeybank Studios. Additionally, I aimed to address and resolve some issues that I observed on the original site.
 
-## Creating a project
+[Check out the demo site here](https://honey-bank-studio-recreation.vercel.app/)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Identified Issues
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+- **Mobile Layout**: The layout appears to break around a viewport width of approximately 400px. This seems to be related to the `position: absolute` declaration in the `.scroller` class.
+- **Mobile Navigation Menu**: There's a glitchy fade noticeable on the top right of the navigation menu when toggling the menu.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Implemented Improvements
 
-## Developing
+- **Mobile Layout**: Fixed the breaking layout.
+- **Mobile Navigation Menu**: Resolved the glitchy fade issue and smoothed out the navigation toggle. Now it features an animated hamburger menu.
+- **Contact Form**: Enhanced the form progressively to include validation on both client and server sides. Added a toast notification for successful submission and error feedback.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
+## Running the Project Locally
 
 ```bash
-npm run build
+# clone the repo
+gh repo clone edwardspresume/honey_bank_studio_recreation
+
+# change directory to the project
+cd honey_bank_studio_recreation
+
+# install dependencies
+pnpm install
+
+# start the dev server
+pnpm dev
 ```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
