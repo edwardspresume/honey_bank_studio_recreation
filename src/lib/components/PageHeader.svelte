@@ -3,8 +3,8 @@
 </script>
 
 <header
-	style="height:{viewPortHeight}vh;"
-	class="relative grid content-center w-full clip-header bg-primary"
+	style="min-block-size:{viewPortHeight}vh;"
+	class="relative grid content-center w-full py-16 clip-header bg-primary"
 >
 	<div class="container mt-20 text-tertiary mix-blend-color-dodge">
 		<slot />
