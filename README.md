@@ -7,12 +7,11 @@ Please note that this was not intended to be a complete 1:1 recreation of the si
 ## Identified Issues
 
 - **Mobile Layout**: The layout appears to break around a viewport width of approximately 400px. This seems to be related to the `position: absolute` declaration in the `.scroller` class.
-- **Mobile Navigation Menu**: There's a glitchy fade noticeable on the top right of the navigation menu when toggling the menu.
 
 ## Implemented Improvements
 
 - **Mobile Layout**: Fixed the breaking layout.
-- **Mobile Navigation Menu**: Resolved the glitchy fade issue and smoothed out the navigation toggle. Now it features an animated hamburger menu.
+- **Mobile Navigation Menu**: Smoothed out the navigation toggle. Now it features an animated hamburger menu.
 - **Contact Form**: Enhanced the form progressively to include validation on both client and server sides. Added a toast notification for successful submission and error feedback.
 
 ## Running the Project Locally
