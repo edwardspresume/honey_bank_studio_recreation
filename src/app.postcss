@@ -13,8 +13,19 @@
 		--tertiary-color: #bc6083;
 	}
 
+	html {
+		scroll-behavior: smooth;
+		scroll-padding-top: 4.275rem;
+	}
+
 	body {
 		color: var(--foreground);
 		background: var(--background);
+	}
+
+	@media (width > 640px) {
+		html {
+			scroll-padding-top: 5.875rem;
+		}
 	}
 }
