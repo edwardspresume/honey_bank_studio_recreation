@@ -10,7 +10,7 @@
 
 <h1
 	class={cn(
-		'font-bold [line-height:1.2] max-w-[46rem] text-[2.625rem] sm:text-[5.375rem]',
+		'font-bold [line-height:1.2] max-w-[46rem] text-[2.66625rem] sm:text-[3.333125rem] md:text-[5rem]',
 		className
 	)}
 >
